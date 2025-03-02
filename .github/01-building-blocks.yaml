@@ -1,0 +1,14 @@
+name: 01 - Building blocks
+push: on
+
+jobs:
+  echo-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say-hello
+        run: echo "Hello world"
+  echo-Goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say-goodbye
+        run: echo "Goodbye & thanks ....welcome to Github Actions Master"
