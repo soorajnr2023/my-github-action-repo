@@ -12,3 +12,8 @@ jobs:
     steps:
       - name: say-goodbye
         run: echo "Goodbye & thanks ....welcome to Github Actions Master"
+    steps: 
+      - name: failing step
+        run: |
+        echo "This steps is failing, please check if its gets failed"
+        exit 1
