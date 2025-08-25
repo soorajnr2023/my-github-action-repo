@@ -1,0 +1,12 @@
+name: First Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First step
+        run: echo "This is the first step of the first job in the first workflow"
+      - name: Second step
+        run: |
+          echo "This is the second step of the first job in the first workflow"
+          echo "This step runs a multi-line script"
